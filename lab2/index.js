@@ -45,5 +45,17 @@ document.querySelector('button').addEventListener('click', () => {
         const output = `${first}${second.replace(second[0], second[0].toUpperCase())}`;
         console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
     }
-})
+});
+//2.4
+
+(function () {
+    const header = document.querySelector('h1');
+    header.style.color = 'red';
+
+    document.querySelector('body').addEventListener('click', function () {
+        header.style.color = 'blue'
+    })
+})();
+
+
 
