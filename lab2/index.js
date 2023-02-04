@@ -31,12 +31,11 @@ for (const [min, events] of gameEvents) {
 }
 
 // 2.2
+document.body.append(document.createElement('textarea'));
+const btn = document.body.append(document.createElement('button'));
 
-
-const btn = document.querySelectorAll('#button').value;
-const text = document.querySelectorAll('#textarea').value;
-
-btn.addEventListener('click', () => {
+document.querySelector('button').addEventListener('click', () => {
+    const text = document.querySelector('textarea').value;
     console.log(text);
 })
 
